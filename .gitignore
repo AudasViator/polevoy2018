@@ -87,6 +87,8 @@ project.fragment.lock.json
 artifacts/
 **/Properties/launchSettings.json
 
+/OpenCV/
+
 # StyleCop
 StyleCopReport.xml
 
