@@ -101,10 +101,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/misis/polevoy/vasin_a_a/prj/cv_hello_word/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/misis/polevoy/vasin_a_a/prj/cv_lines/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/misis/polevoy/vasin_a_a -BC:/misis/polevoy/vasin_a_a/build.win64.vc2015 --check-stamp-file C:/misis/polevoy/vasin_a_a/build.win64.vc2015/prj/cv_hello_word/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/misis/polevoy/vasin_a_a -BC:/misis/polevoy/vasin_a_a/build.win64.vc2015 --check-stamp-file C:/misis/polevoy/vasin_a_a/build.win64.vc2015/prj/cv_lines/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -112,12 +112,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/misis/polevoy/vasin_a_a/prj/cv_hello_word/CMakeLists.txt;C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt;C:\misis\polevoy\OpenCV\build\OpenCVConfig-version.cmake;C:\misis\polevoy\OpenCV\build\OpenCVConfig.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_hello_word\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/misis/polevoy/vasin_a_a/prj/cv_lines/CMakeLists.txt;C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt;C:\misis\polevoy\OpenCV\build\OpenCVConfig-version.cmake;C:\misis\polevoy\OpenCV\build\OpenCVConfig.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_lines\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/misis/polevoy/vasin_a_a/prj/cv_hello_word/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/misis/polevoy/vasin_a_a/prj/cv_lines/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/misis/polevoy/vasin_a_a -BC:/misis/polevoy/vasin_a_a/build.win64.vc2015 --check-stamp-file C:/misis/polevoy/vasin_a_a/build.win64.vc2015/prj/cv_hello_word/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/misis/polevoy/vasin_a_a -BC:/misis/polevoy/vasin_a_a/build.win64.vc2015 --check-stamp-file C:/misis/polevoy/vasin_a_a/build.win64.vc2015/prj/cv_lines/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -125,12 +125,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/misis/polevoy/vasin_a_a/prj/cv_hello_word/CMakeLists.txt;C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt;C:\misis\polevoy\OpenCV\build\OpenCVConfig-version.cmake;C:\misis\polevoy\OpenCV\build\OpenCVConfig.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_hello_word\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/misis/polevoy/vasin_a_a/prj/cv_lines/CMakeLists.txt;C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt;C:\misis\polevoy\OpenCV\build\OpenCVConfig-version.cmake;C:\misis\polevoy\OpenCV\build\OpenCVConfig.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_lines\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/misis/polevoy/vasin_a_a/prj/cv_hello_word/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/misis/polevoy/vasin_a_a/prj/cv_lines/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/misis/polevoy/vasin_a_a -BC:/misis/polevoy/vasin_a_a/build.win64.vc2015 --check-stamp-file C:/misis/polevoy/vasin_a_a/build.win64.vc2015/prj/cv_hello_word/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/misis/polevoy/vasin_a_a -BC:/misis/polevoy/vasin_a_a/build.win64.vc2015 --check-stamp-file C:/misis/polevoy/vasin_a_a/build.win64.vc2015/prj/cv_lines/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -138,12 +138,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/misis/polevoy/vasin_a_a/prj/cv_hello_word/CMakeLists.txt;C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt;C:\misis\polevoy\OpenCV\build\OpenCVConfig-version.cmake;C:\misis\polevoy\OpenCV\build\OpenCVConfig.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_hello_word\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/misis/polevoy/vasin_a_a/prj/cv_lines/CMakeLists.txt;C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt;C:\misis\polevoy\OpenCV\build\OpenCVConfig-version.cmake;C:\misis\polevoy\OpenCV\build\OpenCVConfig.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_lines\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/misis/polevoy/vasin_a_a/prj/cv_hello_word/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/misis/polevoy/vasin_a_a/prj/cv_lines/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/misis/polevoy/vasin_a_a -BC:/misis/polevoy/vasin_a_a/build.win64.vc2015 --check-stamp-file C:/misis/polevoy/vasin_a_a/build.win64.vc2015/prj/cv_hello_word/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/misis/polevoy/vasin_a_a -BC:/misis/polevoy/vasin_a_a/build.win64.vc2015 --check-stamp-file C:/misis/polevoy/vasin_a_a/build.win64.vc2015/prj/cv_lines/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -151,8 +151,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/misis/polevoy/vasin_a_a/prj/cv_hello_word/CMakeLists.txt;C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt;C:\misis\polevoy\OpenCV\build\OpenCVConfig-version.cmake;C:\misis\polevoy\OpenCV\build\OpenCVConfig.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\misis\polevoy\vasin_a_a\prj\cv_hello_word\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_hello_word\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/misis/polevoy/vasin_a_a/prj/cv_lines/CMakeLists.txt;C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt;C:\misis\polevoy\OpenCV\build\OpenCVConfig-version.cmake;C:\misis\polevoy\OpenCV\build\OpenCVConfig.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\misis\polevoy\OpenCV\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\misis\polevoy\vasin_a_a\prj\cv_lines\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_lines\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -163,9 +163,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{41F37F5D-1F79-32ED-8033-D193ABF97335}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_hello_word\cv_hello_word.vcxproj">
-      <Project>{45BFD08C-4220-3250-8F00-DCC7A144F9EF}</Project>
-      <Name>cv_hello_word</Name>
+    <ProjectReference Include="C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_lines\cv_lines.vcxproj">
+      <Project>{4EF938C0-B87E-3395-BE44-F8D959FE364D}</Project>
+      <Name>cv_lines</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

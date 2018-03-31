@@ -163,6 +163,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{41F37F5D-1F79-32ED-8033-D193ABF97335}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_fifth_lab_kr\cv_fifth_lab_kr.vcxproj">
+      <Project>{A95D596B-CC2D-36E5-8E7D-02C8DC48D1F9}</Project>
+      <Name>cv_fifth_lab_kr</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_first_lab\cv_first_lab.vcxproj">
+      <Project>{A71A4AE3-AB2E-315A-BCE8-C82EE5A5A339}</Project>
+      <Name>cv_first_lab</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_fourth_lab\cv_fourth_lab.vcxproj">
       <Project>{2B6A10EB-F3C9-38DA-B10D-26E788CDB096}</Project>
       <Name>cv_fourth_lab</Name>
@@ -174,6 +182,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_lines\cv_lines.vcxproj">
       <Project>{4EF938C0-B87E-3395-BE44-F8D959FE364D}</Project>
       <Name>cv_lines</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_second_lab\cv_second_lab.vcxproj">
+      <Project>{8F1615A5-92BB-3D6C-B98D-AAC9A0A1E56B}</Project>
+      <Name>cv_second_lab</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\misis\polevoy\vasin_a_a\build.win64.vc2015\prj\cv_third_lab\cv_third_lab.vcxproj">
+      <Project>{8CDAC1DC-F402-312B-A232-09C2D95EC87D}</Project>
+      <Name>cv_third_lab</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

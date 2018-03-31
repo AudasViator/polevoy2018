@@ -1,3 +1,7 @@
 add_subdirectory(cv_lines)
 add_subdirectory(cv_hello_word)
+add_subdirectory(cv_first_lab)
+add_subdirectory(cv_second_lab)
+add_subdirectory(cv_third_lab)
 add_subdirectory(cv_fourth_lab)
+add_subdirectory(cv_fifth_lab_kr)
