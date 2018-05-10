@@ -92,26 +92,24 @@ void findQuadrangles(cv::Mat& input, std::vector<std::vector<cv::Point>>& output
 		int ch[] = { c, 0 };
 		mixChannels(&input, 1, &oneChannel, 1, ch, 1);
 
-		const int threshold_level = 2;
-		for (int l = 0; l < threshold_level; l++) {
-			if (l == 0) {
-				Canny(oneChannel, oneChannel, threshold1, threshould2, 3);
-				dilate(oneChannel, oneChannel, Mat(), Point(-1, -1));
-			} else {
-				oneChannel = oneChannel >= (l + 1) * 255 / threshold_level;
-			}
+		Canny(oneChannel, oneChannel, threshold1, threshould2, 3);
+		//imwrite(to_string(c) + "_" + to_string(l) + "_channel_after_canny.jpg", oneChannel);
+		dilate(oneChannel, oneChannel, Mat(), Point(-1, -1)); // FIXME
+		//imwrite(to_string(c) + "_" + to_string(l) + "_hannel_after_dilate.jpg", oneChannel);
 
-			findContours(oneChannel, contours, CV_RETR_LIST, CV_CHAIN_APPROX_SIMPLE);
+		findContours(oneChannel, contours, CV_RETR_LIST, CV_CHAIN_APPROX_SIMPLE);
 			
-			vector<Point> approx;
-			for (size_t i = 0; i < contours.size(); i++) {
-				approxPolyDP(Mat(contours[i]), approx, arcLength(Mat(contours[i]), true) * epsFactor, true);
-				double area = abs(contourArea(Mat(approx)));
-				if (approx.size() == 4 && area > 0.1 * imageArea && area < 0.95 * imageArea && isContourConvex(Mat(approx))) {
-					output.push_back(approx);
-				}
+		vector<Point> approx;
+		for (size_t i = 0; i < contours.size(); i++) {
+			approxPolyDP(Mat(contours[i]), approx, arcLength(Mat(contours[i]), true) * epsFactor, true);
+			double area = abs(contourArea(Mat(approx)));
+			if (approx.size() == 4 && area > 0.1 * imageArea && area < 0.95 * imageArea && isContourConvex(Mat(approx))) {
+				output.push_back(approx);
 			}
 		}
+		//cv::cvtColor(input, input, CV_HSV2BGR);
+		//drawQuadrangles(input, output);
+		//imwrite("with_counters.jpg", input); // FIXME
 	}
 }
 
@@ -160,7 +158,11 @@ vector<Paper> getPapers(double threshold1, double threshould2, double epsFactor)
 	ifstream file("head.csv");
 
 	 std::string line;
+	 int i = 0;
 	 while (std::getline(file, line)) {
+		 //if (i++ != 16) {
+			 //continue;
+		 //}
 		 auto values = split(line, ';'); // file_name; p1x; p1y; ... ; p4x; p4y
 
 		 string fileName = values[0];
@@ -185,12 +187,21 @@ vector<Paper> getPapers(double threshold1, double threshould2, double epsFactor)
 		 //cout << fileName << endl;
 		 Mat img = imread(fileName);
 		 findQuadrangles(img, output, threshold1, threshould2, epsFactor);
-
+		 //return papers; // FIXME
 		 float error = 1.0f;
 		 vector<Point> predQuadrangle;
 
 		 if (output.size() > 0) {
-			predQuadrangle = output[0];
+			 int maxAreaIndx = 0;
+			 double maxArea = 0.0;
+			 for (int k = 0; k < output.size(); k++) {
+				 double area = abs(contourArea(Mat(output[k])));
+				 if (area > maxArea) {
+					 maxArea = area;
+					 maxAreaIndx = k;
+				 }
+			}
+			predQuadrangle = output[maxAreaIndx];
 
 			//drawQuadrangle(img, predQuadrangle);
 			//drawQuadrangle(img, trueQuadrangle);
@@ -213,8 +224,8 @@ cv::Mutex mutex;
 
 int main(int argc, char** argv)
 {
-	//getPapers(10, 40, 0.05);
-	//return 0;
+//	getPapers(10, 40, 0.05);
+//	return 0;
 
 	vector<thread> threads;
 	vector<TestResult> results;
